@@ -10,7 +10,18 @@ $(function() {
   console.log(e);
 
   var endTime = new Date();
-  endTime.setHours(23, 59, 59);
+  endTime.setHours(01, 01, 01);
   console.log(endTime);
+
+  currentTime = new Date();
+  currentTime.setHours(0, 0, 0);
+
+  var tickTock = function(){
+    console.log(currentTime);
+    for (var i = 0; i < 10 ; i++) {
+      console.log(currentTime.getSeconds() + i);
+    }
+  };
+  tickTock();
 
 });
