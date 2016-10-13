@@ -6,10 +6,7 @@
   e.setSeconds(e.getSeconds());
 
   var endTime = new Date();
-  endTime.setHours(01, 01, 01);
-
-  currentTime = new Date();
-  currentTime.setHours(0, 0, 0);
+  endTime.setHours(00, 59, 59);
 
   var tickTock = function(){
     for (var i = 0; i < 10 ; i++) {
