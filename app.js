@@ -1,4 +1,3 @@
-$(function() {
   console.log("jQueery Loaded!");
 
   var startTime = new Date();
@@ -24,4 +23,3 @@ $(function() {
   };
   tickTock();
 
-});
