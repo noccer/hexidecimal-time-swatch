@@ -3,7 +3,7 @@
   startTime.setHours(0, 0, 0);
 
   e = startTime;
-  e.setSeconds(e.getSeconds() + 1);
+  e.setSeconds(e.getSeconds());
 
   var endTime = new Date();
   endTime.setHours(01, 01, 01);
