@@ -4,9 +4,6 @@ var finishHour = 23;
 var startTime = new Date();
 startTime.setHours(startHour, 0, 0);
 
-e = startTime;
-e.setSeconds(e.getSeconds());
-
 var endTime = new Date();
 endTime.setHours(finishHour, 59, 59);
 
