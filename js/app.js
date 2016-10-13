@@ -1,11 +1,14 @@
+var startHour = 23;
+var finishHour = 23;
+
 var startTime = new Date();
-startTime.setHours(0, 0, 0);
+startTime.setHours(startHour, 0, 0);
 
 e = startTime;
 e.setSeconds(e.getSeconds());
 
 var endTime = new Date();
-endTime.setHours(00, 59, 59);
+endTime.setHours(finishHour, 59, 59);
 
 var tickTock = function() {
   for (var i = startTime; i <= endTime; i.setSeconds(i.getSeconds() + 1)) {
@@ -17,7 +20,6 @@ var tickTock = function() {
 
     // create the div container and give it style/class
     var colourDiv = document.createElement("div");
-
     colourDiv.style.backgroundColor = '#' + timeInHex;
     colourDiv.className += "colour-div";
 
