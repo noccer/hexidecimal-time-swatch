@@ -20,7 +20,7 @@
       var colourDiv = document.createElement("div");
 
       colourDiv.style.backgroundColor = '#' + timeInHex;
-      colourDiv.className += "divvy";
+      colourDiv.className += "colour-div";
 
       // create the span for showing the colour as text
       var colourSpanText = document.createElement("span");
