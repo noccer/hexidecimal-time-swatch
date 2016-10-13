@@ -14,15 +14,14 @@ h1 {
 }
 #colours {
   display: flex;
-  /*flex-direction: row-reverse;*/
   flex-wrap: wrap;
   width: 40vw;
   height: auto;
   margin: auto auto;
   box-shadow: 0px 0px 100px 15px rgba(255,255,255,0.3);
 }
-  color: rgba(255,255,255,0);
 .colour-div {
+  color: rgba(255,255,255,0.1);
   font-size: 1px;
   width: calc(100% / 60);
   height: 0.666vw;
@@ -32,11 +31,14 @@ h1 {
 .colour-div:hover {
   color: rgba(255,255,255,1);
   font-size: 12px;
-  transform: scale(5);
+  transform: scale(4);
   text-align: center;
   cursor: pointer;
-  border: 0.1px solid grey;
+  border: 0.1px solid red;
+  display: inline-block;
 }
-.time:hover {
-  transform: translateX(3vw);
+.colour-div:hover .time {
+  position: relative;
+  left: 0.8vw;
+  bottom: 0.2vw;
 }
